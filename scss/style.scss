@@ -41,6 +41,19 @@ a {
   line-height: 105px;
   color: #1c2323;
 }
+.header__burger{
+  display: none;
+  order: 2;
+  .header__line{
+    display: block;
+    width: 50px;
+    background-color: #58A9A5;
+    height: 5px;
+    &:not(:last-child){
+      margin-bottom: 10px;
+    }
+  }
+}
 .container {
   padding: 0 15px 17%;
   max-width: 84%;
@@ -484,5 +497,134 @@ a {
     @extend %button;
     font-weight: 700;
     border-radius: 20px 20px 20px 0px;
+  }
+}
+@media  screen and (max-width:1700px) {
+  html{
+    font-size: 9px;
+  }
+}
+@media screen and (max-width:1600px){
+  %button{
+    width: 230px;
+    height: 70px;
+  }
+  .container{
+    padding: 0 15px 8%;
+  }
+  .container__header{
+    margin-bottom: 4%;
+  }
+  .container__project{
+    margin-bottom: 8%;
+  }
+  .project__title{
+    margin-bottom: 2%;
+  }
+  .container__works{
+    margin-bottom: 5%;
+  }
+  .container__testimonial{
+    margin-bottom: 10%;
+  } 
+  .testimonial__text-block {
+    margin: 0 auto 1.5%;
+  }
+  .testimonial__brands {
+    margin: 0 auto 4.5%;
+  }
+}
+@media screen and (max-width:1500px){
+  html{
+    font-size: 8px;
+  }
+  .title{
+    line-height: 70px;
+  }
+  .testimonial__brands{
+    flex-wrap: nowrap;
+  }
+  .testimonial__brand-image {
+    &:not(:last-child){
+      margin-right: 5%;
+    }
+}
+}
+@media screen and (max-width:1400px){
+  %button{
+    width: 190px;
+    height: 60px;
+  }
+}
+@media screen and (max-width:1300px){
+  html{
+    font-size: 7px;
+  }
+  // .project__blocks{
+  //   display: block;
+  // }
+  // .project-column{
+  //   width: 50%;
+  // }
+}
+@media screen and (max-width:1200px){
+  .menu{
+    display: none;
+  }
+  .header__burger{
+    display: block;
+  }
+  .header__button{
+    display: none;
+  }
+}
+@media screen and (max-width:1100px){
+  %button{
+    width: 140px;
+    height: 50px;
+  }
+  html{
+    font-size: 6px;
+  }
+  .container{
+    padding: 0 15px 6%;
+  }
+  .container__header{
+    margin-bottom: 2%;
+  }
+  .container__main-block{
+    margin-top: 1%;
+  }
+  .container__project{
+    margin-bottom: 5%;
+  }
+  .project__title{
+    margin-bottom: 1%;
+  }
+  .container__works{
+    margin-bottom: 2%;
+  }
+  .container__testimonial{
+    margin-bottom: 6%;
+  } 
+  .testimonial__text-block {
+    margin: 0 auto 0.5%;
+  }
+  .testimonial__brands {
+    margin: 0 auto 2.5%;
+  }
+  .video-block{
+    min-height: 250px;
+  }
+  .video-block__button{
+    width: 100px;
+    .video-block__img{
+      border: 8px solid rgba(255, 255, 255, 0.4);
+    }
+  }
+}
+@media screen and (max-width:900px){
+  html{
+    font-size: 5px;
   }
 }
